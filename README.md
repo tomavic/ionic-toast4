@@ -2,9 +2,8 @@
 
 ## Introduction:
 
-This is an `ionic-toast` bower component which can be used with any Ionic framework's application.
-
-[View Demo](http://rajeshwarpatlolla.github.io/ionic-toast-demo/demo/ "Demo")
+This is an `ionic-toast4` bower component which can be used with any Ionic framework's application.
+This repo has been forked from original `ionic-toast`
 
 
 ## Prerequisites.
@@ -15,7 +14,9 @@ This is an `ionic-toast` bower component which can be used with any Ionic framew
 
 **1)** In your project repository install the ionic-toast using bower
 
-    bower install ionic-toast --save
+    bower install ionic-toast4 --save
+	
+    npm install ionic-toast4 --save	
 
 This will install the latest version released. If you wish to install a specific version please use `bower install ionic-toast#<version number>`
 
@@ -53,7 +54,7 @@ angular.module('mainModuleName', ['ionic', 'ionic-toast']){
 ````javascript
 $scope.showToast = function(){
 <!-- ionicToast.show(message, position, stick, time); -->
-  ionicToast.show('This is a toast at the top.', 'top', true, 2500);
+  ionicToast.show('This is a toast at the top.', 2500, '#42b');
 };
 ````
 
@@ -61,15 +62,9 @@ The arguments are as follows. The order of arguments should not be changed.
 
 a) `message` is the first argument, which takes any string message.
 
-b) `position`(Optional) is the second argument, which takes on of the three values(top, middle, bottom). default position is `top`.
+b) `timeout`(Optional) is the fourth argument, which takes time in milliseconds. If the value is greater than 5000, then it will be considered as 5000(5 seconds) only. The default value is 4000 milli seconds.
 
-c) `stick`(Optional) is the third argument, which takes either `true` or `false`. Default value is false.
-- If the value is true, the toast will not close automatically. It will be closed once you click on the close button.
-- If the value is false, the toast will close automatically, after the given time.
-
-d) `timeout`(Optional) is the fourth argument, which takes time in milliseconds. If the value is greater than 5000, then it will be considered as 5000(5 seconds) only. The default value is 4000 milli seconds.
-
-e) `background`(Optional) is the fifth argument, which takes the background color in hexadecimal, rgb() or rgba(). If the value is null the background color is `rgba(0, 0, 0, 0.75)`.
+c) `background`(Optional) is the fifth argument, which takes the background color in hexadecimal, rgb() or rgba(). If the value is null the background color is `rgba(0, 0, 0, 0.75)`.
 
 **7)** In your controller you have to define a function like below to hide the toast
 
@@ -95,39 +90,10 @@ Once you click on the button you should see the remaining screen shots.
 
 ## Versions:
 
-### 1) v0.1.0
-The whole `ionic-toast` component functionality has been implemented, and it can be installed with the command `bower install ionic-toast --save`
+### 1) v1.0.0
+The whole `ionic-toast4` component functionality has been implemented, and it can be installed with the command `bower install ionic-toast4 --save` or via `npm install ionic-toast4 --save`
 
-### 2) v0.1.1
-Bug Fix
-
-### 3) v0.2.0
-Lint issues fixed, npm packages updated, main files added in the package.json, changes in the gulp tasks.
-
-### 4) v0.3.0
-Code modularity implemented, npm packages updated.
-
-JS and CSS file is combined into one `ionic-toast.bundle.min.js` file in the dist folder.
-
-### 5) v0.4.0
-Bug fix.
-
-### 6) v0.4.1
-[Issue#21](https://github.com/rajeshwarpatlolla/ionic-toast/issues/21)
-
-
-## License:
-[MIT](https://github.com/rajeshwarpatlolla/ionic-toast/blob/master/LICENSE.md "MIT")
 
 ## Contact:
-gmail : rajeshwar.patlolla@gmail.com
+Email : hbasheer@live.com
 
-github : https://github.com/rajeshwarpatlolla
-
-twitter : https://twitter.com/rajeshwar_9032
-
-facebook : https://www.facebook.com/rajeshwarpatlolla
-
-paypal : rajeshwar.patlolla@gmail.com
-
-Rate / Comment : http://market.ionic.io/plugins/ionictoast

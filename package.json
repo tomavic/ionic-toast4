@@ -1,9 +1,8 @@
 {
   "name": "ionic-toast4",
   "version": "1.0.0",
-  "description": "A toast for IONIC framework",
+  "description": "A toast for ionic framework",
   "main": "./dist/ionic-toast.bundle.min.js",
-  "scripts": {},
   "author": "https://github.com/tomavic, hbasheer@live.com",
   "license": "MIT",
   "dependencies": {},
